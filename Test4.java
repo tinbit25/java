@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 class Shape {
     float length;
     float width;
@@ -36,7 +36,11 @@ class Cicle extends Shape {
 
 public class Test4 {
     public static void main(String[] args) {
-        Cicle c = new Cicle(5);
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter radius: ");
+        float radius = sc.nextFloat();
+        Cicle c = new Cicle(radius);
+    
         System.out.println("Perimeter of circle: " + c.getPerimeter());
         System.out.println("Area of circle: " + c.getArea());
     }
