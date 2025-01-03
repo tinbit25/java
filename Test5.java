@@ -1,5 +1,8 @@
 
 class Employee {
+   String name;
+   String address;
+    String salary;
     
 }
 class Programmer extends Employee{
